@@ -89,7 +89,7 @@ return (SUCCESS);
 * @data: a pointer to the data structure
 *
 * Return: (Success) 0 is returned
-* ------- (Fail) negative number will returned
+* (Fail) negative number will returned
 **/
 
 int abort_prg(sh_t *data __attribute__((unused)))
@@ -225,7 +225,6 @@ while ((blt + i)->cmd)
 if (_strcmp(data->args[0], (blt + i)->cmd) == 0)
 
 return ((blt + i)->f(data));
-
 i++;
 
 }
